@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <style>
+        body {
+            background-color: black; 
+            color: white;
+        }
+        
+        header {
+            display: flex; 
+            justify-content: space-between;
+            background-color: dimgrey;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin-left: 3vh;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        nav {
+            display: flex; 
+            justify-content: center; 
+            margin-top: 4vh;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white; 
+        }
+
+        nav a {
+            margin: 0.25vh 1.75vh 0 2vh;
+        }
+
+        nav a:hover {
+            transition: 0.3s ease-in-out;
+            color: black;
+        }
+
+        svg {
+            position: relative;
+            left: 4.5vh;
+            top: 1.7vh;
+        }
+
+        span {
+            margin: 4.5vh;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #newsContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2vh;
+            margin-top: 5vh;
+        }
+        
+        #newsContainer a {
+            display: block;
+            position: relative;
+            bottom: 10vh;
+            margin: 0 2vh 0 2vh;
+            z-index: 2;
+            font-size: 20px;
+        }
+
+        #newsContainer a:hover {
+            transition: 0.3s ease-in-out;
+            color:coral;
+        }
+
+        .newsContainerItems {
+            border: solid 1px;
+            border-radius: 10px;
+            padding: 3vh;
+            height: 50vh;
+        }
+
+        .newsContainerBigItems {
+            width: 90vh;
+        }
+
+        .newsContainerBigItems img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        .newsContainerBigItems div {
+            height: 15vh;
+            background-color: rgb(0, 0, 0, 0.25);
+            position: relative;
+            bottom: 18vh;
+            z-index: 1;
+        }
+
+        .newsContainerSmallItems a {
+            padding-top: 12vh;
+        }
+
+        .newsContainerSmallItems {
+            width: 45vh;
+        }
+
+        .newsContainerSmallItems img {
+            width: 45vh;
+        }
+
+        footer {
+            text-align: center;
+            font-size: large;
+            margin: 3vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Portal</h1>
+        <nav>
+            <a href="https://www.msn.com/en-us/channel/topic/World/tp-Y_ee352f2b-a60f-41b3-9b10-4d54b4e7f3f9?ocid=msedgntp&pc=u531">World News</a>
+            <a href="https://www.msn.com/en-us/channel/topic/Politics/tp-Y_bced654c-7e2e-4c63-acb4-f3b3b89bd4e3">Politics</a>
+            <a href="https://www.msn.com/en-us/channel/topic/Business/tp-Y_367b7be1-6bd2-44e7-95b3-b0d077ccc28d">Business</a>
+            <a href="https://www.msn.com/en-us/channel/topic/Entertainment/tp-Y_414a7c40-a373-4025-b4ce-e9502e9e17ed">Entertainment</a>
+            <a href="https://www.msn.com/en-us/channel/topic/Lifestyle/tp-Y_99096e96-6d4f-401c-832b-461e08143a5a">Lifestyle</a>
+        </nav>
+        <span>Powered by Microsoft</span>
+    </header>
+    <main>
+        <div id="newsContainer">
+            <div class="newsContainerItems newsContainerBigItems">
+                <img src="https://th.bing.com/th?id=ORMS.2017ccb0a9fa9bffc000b1183cd35d00&pid=Wdp&w=612&h=304&qlt=90&c=1&rs=1" alt="Politics">
+                <a href="https://www.msn.com/en-us/news/us/laken-riley-s-mother-blasts-biden-as-pathetic-for-getting-daughter-s-name-wrong-during-sotu/ar-BB1jzGJI?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=238">
+                    Laken Riley’s mother blasts Biden as ‘pathetic’ for getting daughter’s name wrong during SOTU
+                </a>
+                <div></div>
+            </div>
+            <div class="newsContainerItems newsContainerSmallItems">
+                <img src="https://th.bing.com/th?id=ORMS.10742e0ab1f70ccca61ef0f75a5a0c59&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1" alt="World News">
+                <a href="https://www.msn.com/en-us/news/world/north-korea-s-threat-is-changing/ar-BB1jzWGn?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=134">
+                    North Korea’s Threat Is Changing
+                </a>
+            </div>
+            <div class="newsContainerItems newsContainerSmallItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jwEBb.img?w=768&h=512&m=6&x=282&y=405&s=1365&d=615" alt="Politics">
+                <a href="https://www.msn.com/en-us/news/politics/joe-biden-calls-out-supreme-court-to-their-faces/ar-BB1jwAjw?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=200">
+                    Joe Biden Calls Out Supreme Court to Their Faces
+                </a>
+            </div>
+            <div class="newsContainerItems newsContainerBigItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jyF1G.img?w=768&h=432&m=6&x=318&y=123&s=665&d=209" alt="Entertainment">
+                <a href="https://www.msn.com/en-us/entertainment/entertainment-celebrity/who-are-miley-cyrus-siblings-a-look-into-the-lives-of-the-6-cyrus-children/ar-BB1jyqlT?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=182">
+                    Who are Miley Cyrus' siblings? A look into the lives of the 6 Cyrus children
+                </a>
+                <div></div>
+            </div>
+            <div class="newsContainerItems newsContainerSmallItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1m2Kub.img?w=768&h=576&m=6&x=328&y=296&s=476&d=476" alt="Lifestyle">
+                <a href="https://www.msn.com/en-us/lifestyle/lifestyle-buzz/i-m-abrosexual-it-took-me-30-years-to-realise/ar-AA1m2FSo?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=289">
+                    I'm abrosexual - it took me 30 years to realise
+                </a>
+            </div>
+            <div class="newsContainerItems newsContainerSmallItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jzTcm.img?w=768&h=512&m=6&x=306&y=262&s=442&d=442" alt="Lifestyle">
+                <a href="https://www.msn.com/en-us/health/other/woman-30-dies-after-blood-clot-symptoms-were-dismissed-twice-as-long-covid-and-anxiety/ar-BB1jzTcz?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=226">
+                    Woman, 30, Dies After Blood Clot Symptoms Were Dismissed Twice as 'Long COVID and Anxiety'
+                </a>
+            </div>
+            <div class="newsContainerItems newsContainerBigItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jzgFC.img?w=768&h=480&m=6&x=833&y=557&s=633&d=633" alt="Lifestyle">
+                <a href="https://www.msn.com/en-us/lifestyle/lifestyle-buzz/jk-rowling-is-right-a-trans-woman-is-not-a-woman-and-it-s-not-wrong-to-say-so/ar-BB1jz6tQ?ocid=msedgntp&cvid=406d10c36ae345a8bc510446621fe062&ei=23">
+                    JK Rowling is right: a trans woman is not a woman, and it’s not wrong to say so
+                </a>
+                <div></div>
+            </div>
+            <div class="newsContainerItems newsContainerBigItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1juDQq.img?w=768&h=402&m=6&x=702&y=137&s=217&d=217" alt="Lifestyle">
+                <a href="https://www.msn.com/en-us/money/smallbusiness/mark-cuban-looks-for-2-qualities-in-employees-if-they-fail-on-either-one-you-re-going-to-be-in-trouble/ar-BB1juGgO?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=369">
+                    Mark Cuban looks for 2 qualities in employees: ‘If they fail on either one, you’re going to be in trouble’
+                </a>
+                <div></div>
+            </div>
+            <div class="newsContainerItems newsContainerBigItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jzTF2.img?w=768&h=518&m=6&x=361&y=130&s=69&d=69" alt="Lifestyle">
+                <a href="https://www.msn.com/en-us/movies/celebrity/matthew-mcconaughey-wife-camila-explain-real-reason-behind-move-from-malibu-to-texas/ar-BB1jzTF6?ocid=msedgntp&cvid=db6acd2b3e744dcbaf345df0551c285c&ei=9">
+                    Matthew McConaughey, wife Camila explain real reason behind move from Malibu to Texas
+                </a>
+                <div></div>
+            </div>
+            <div class="newsContainerItems newsContainerBigItems">
+                <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1jzRoe.img?w=768&h=402&m=6&x=25&y=59&s=764&d=113" alt="Lifestyle">
+                <a href="https://www.msn.com/en-us/news/politics/court-finds-trump-made-shocking-scandalous-false-claims-in-steele-dossier-report-ex-president-must-pay-382k-in-legal-fees/ar-BB1jzWc4?ocid=msedgntp&pc=U531&cvid=167de59a68374d5a9939075c0c435585&ei=346">
+                    Court Finds Trump Made 'Shocking, Scandalous' False Claims in Steele Dossier Report; Ex-President Must Pay $382K in Legal Fees
+                </a>
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <footer>© 2024 Kanan N. All rights reserved.</footer>
+</body>
+</html>
